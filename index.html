@@ -382,20 +382,19 @@
     }
 
     function cargarCookiesPermitidas() {
-      // Ejemplo con Google Analytics:
-      const gaScript = document.createElement("script");
-      gaScript.setAttribute("async", "");
-      gaScript.src = "https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX";
-      document.head.appendChild(gaScript);
+      const GA_ID = "G-S1862EKK2G";
+      if (window.gaCargado) return;   // evita cargarlo dos veces
+      window.gaCargado = true;
 
-      const gaScript2 = document.createElement("script");
-      gaScript2.innerHTML = `
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', '6LeVk5krAAAAADE1C6-OfvxlOgedIUxkRP4tVk-7');
-      `;
-      document.head.appendChild(gaScript2);
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () { dataLayer.push(arguments); };
+      gtag("js", new Date());
+      gtag("config", GA_ID);
+
+      const gaScript = document.createElement("script");
+      gaScript.async = true;
+      gaScript.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
+      document.head.appendChild(gaScript);
     }
   });
 </script>
