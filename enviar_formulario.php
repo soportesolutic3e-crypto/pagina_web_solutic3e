@@ -97,7 +97,7 @@ try {
          VALUES (?, ?, ?, ?, ?, ?, 1, ?, ?)'
     );
     $ip      = $_SERVER['REMOTE_ADDR'] ?? null;
-    $version = '2025-08';
+    $version = '2026-09';
     $stmt->bind_param('ssssssss', $nombre, $compania, $correo, $telefono, $referencia, $mensaje, $ip, $version);
     $stmt->execute();
     $stmt->close();
