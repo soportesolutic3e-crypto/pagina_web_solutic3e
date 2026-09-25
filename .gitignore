@@ -1,0 +1,5 @@
+   solutic3e_config.php
+   php_errors.log
+   error_log
+   *.bk
+   diag_*.php
