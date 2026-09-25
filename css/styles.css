@@ -1,0 +1,216 @@
+:root {
+  --bs-primary: #040759;
+}
+/*---------------------------------------------------------------------------------*/
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Hover efecto */
+.navbar .nav-link:hover {
+  color: #0B2C4D;
+  border-bottom: 2px solid #0B2C4D;
+  transition: all 0.3s ease;
+}
+
+/* Elemento activo */
+.navbar .nav-link.active {
+  color: #0B2C4D;
+  font-weight: 600;
+  border-bottom: 2px solid #0B2C4D;
+}
+
+.zoom-hover {
+  transition: transform 0.3s ease-in-out;
+}
+
+.zoom-hover:hover {
+  transform: scale(1.05);
+  z-index: 10;
+}
+
+
+/*---------------------------------------------------------------------------------*/
+.btn-whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  font-size: 28px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.btn-whatsapp:hover {
+  transform: scale(1.1);
+  color: white;
+}
+
+/*---------------------------------------------------------------------------------*/
+.hero {
+  height: 65vh;
+  width: 100%;
+  margin-bottom: 40px;
+  background-image: url('../img/azul.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden; 
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(4, 7, 89, 0.6); /* filtro azul */
+  z-index: 1;
+}
+.hero .container {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* Puedes ajustar el 0.5 para hacerlo más oscuro o claro */
+  z-index: 1;
+}
+/*---------------------------------------------------------------------------------*/
+.elegirnos{
+    border-radius: 1rem;
+    height: 350px;
+    width: 350px;
+    
+}
+/*---------------------------------------------------------------------------------*/
+.grayscale-logo {
+  max-height: 100px;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+.grayscale-logo:hover {
+  filter: none;
+  opacity: 1;
+  transform: scale(1.05);
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 60% !important;
+}
+/*---------------------------------------------------------------------------------*/
+
+.bg-azul-oscuro {
+  background-color: #040759;
+}
+.laptop{
+    height: 295px;
+
+}
+.card-alt {
+  background-color: #d4e5ff; 
+}
+
+
+/*---------------------------------------------------------------------------------*/
+/*--------------------- SECCION CLIENTES LOGOS ------------------------------------*/
+
+.client-logo {
+  height: 80px;              /* Puedes ajustar a 90px o 100px si prefieres */
+  width: 100%;
+  object-fit: contain;       /* Mantiene proporción sin deformar */
+  transition: all 0.3s ease;
+  filter: brightness(1);
+}
+
+.client-logo:hover {
+  filter: brightness(1.1) drop-shadow(0 4px 10px rgba(4, 7, 89, 0.2));
+  transform: scale(1.05);
+}
+
+.client-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  border: 2px solid #f0f0f0;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+.client-card:hover {
+  border-color: #040759;
+  box-shadow: 0 6px 24px rgba(4, 7, 89, 0.15);
+  transform: scale(1.03);
+}
+
+/*---------------------------------------------------------------------------------*/
+/*------------------------------ SECCION COOKIES ----------------------------------*/
+
+
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #0B2C4D; /* Azul oscuro de SOLUTIC3E */
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  font-size: 0.95rem;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+}
+
+.cookie-banner a {
+  color: #FFC107; /* Rojo SOLUTIC3E */
+  text-decoration: underline;
+}
+
+.cookie-banner button {
+  background: #FFC107;
+  color: #0B2C4D;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cookie-banner.hide {
+  display: none;
+}
+/*---------------------------------------------------------------------------------*/
+.form-shadow {
+  box-shadow: 0 0 20px #87abe1;
+  border-radius: 12px;
+  padding: 2rem;
+  background-color: white;
+}
