@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://solutic3e.com/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://solutic3e.com/servicios.php</loc>
+    <lastmod>2026-09-26</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://solutic3e.com/productos.php</loc>
+    <lastmod>2026-09-26</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://solutic3e.com/sobrenosotros.php</loc>
+    <lastmod>2026-09-26</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://solutic3e.com/politica_de_datos.php</loc>
+    <lastmod>2026-09-26</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://solutic3e.com/cookies.php</loc>
+    <lastmod>2026-09-26</lastmod>
+    <priority>0.3</priority>
+  </url>
+</urlset>

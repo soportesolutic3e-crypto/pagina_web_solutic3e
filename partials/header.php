@@ -15,6 +15,12 @@ $activa      = $activa      ?? '';
 $noindex     = $noindex     ?? false;
 $estilos     = $estilos     ?? '';
 
+// URL canónica calculada a partir del archivo actual (index.php -> raíz)
+$sitio       = 'https://solutic3e.com/';
+$pagina      = basename($_SERVER['SCRIPT_NAME'] ?? 'index.php', '.php');
+$urlCanonica = $sitio . ($pagina === 'index' ? '' : $pagina . '.php');
+$imagenOg    = $sitio . 'img/og-image.jpg';
+
 $menu = [
     'index'         => ['/',                  'Inicio'],
     'sobrenosotros' => ['sobrenosotros.php',  'Sobre Nosotros'],
@@ -39,6 +45,27 @@ if (!function_exists('e')) {
 <?php if ($noindex): ?>
   <meta name="robots" content="noindex, nofollow">
 <?php endif; ?>
+  <link rel="canonical" href="<?= e($urlCanonica) ?>">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png">
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+  <meta name="theme-color" content="#040759">
+
+  <!-- Open Graph: vista previa al compartir en WhatsApp, Facebook, LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Solutic3e">
+  <meta property="og:locale" content="es_CO">
+  <meta property="og:title" content="<?= e($titulo) ?>">
+  <meta property="og:description" content="<?= e($descripcion) ?>">
+  <meta property="og:url" content="<?= e($urlCanonica) ?>">
+  <meta property="og:image" content="<?= e($imagenOg) ?>">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Solutic3e - Automatización de procesos y desarrollo de software">
+  <meta name="twitter:card" content="summary_large_image">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">

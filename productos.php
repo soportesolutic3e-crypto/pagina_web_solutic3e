@@ -6,7 +6,7 @@ require __DIR__ . '/partials/header.php';
 ?>
 <section id="productos" class="py-5 bg-white">
   <div class="container">
-    <h2 class="text-center mb-5" data-aos="fade-up">Nuestros Productos</h2>
+    <h1 class="h2 text-center mb-5" data-aos="fade-up">Nuestros Productos</h1>
     <div class="row g-4">
 
       <!-- Producto 1 -->

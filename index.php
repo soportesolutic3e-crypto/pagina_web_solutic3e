@@ -150,42 +150,42 @@ require __DIR__ . '/partials/header.php';
       <!-- Cliente 1 -->
       <div class="col-6 col-lg col-md-3">
         <div class="client-card p-3 shadow-sm bg-white rounded-4">
-          <img src="img/proexequial.webp" class="client-logo" alt="Cliente 1">
+          <img src="img/proexequial.webp" class="client-logo" alt="Logo de Proexequial, cliente de Solutic3e">
         </div>
       </div>
 
       <!-- Cliente 2 -->
       <div class="col-6 col-lg col-md-3">
         <div class="client-card p-3 shadow-sm bg-white rounded-4">
-          <img src="img/lafe.webp" class="client-logo" alt="Cliente 2">
+          <img src="img/lafe.webp" class="client-logo" alt="Logo de Capillas de La Fe, cliente de Solutic3e">
         </div>
       </div>
 
       <!-- Cliente 3 -->
       <div class="col-6 col-lg col-md-3">
         <div class="client-card p-3 shadow-sm bg-white rounded-4">
-          <img src="img/logoCooserpark.webp" class="client-logo" alt="Cliente 3">
+          <img src="img/logoCooserpark.webp" class="client-logo" alt="Logo de Cooserpark, cliente de Solutic3e">
         </div>
       </div>
 
       <!-- Cliente 4 -->
       <div class="col-6 col-lg col-md-3">
         <div class="client-card p-3 shadow-sm bg-white rounded-4">
-          <img src="img/logoColibri.webp" class="client-logo" alt="Cliente 4">
+          <img src="img/logoColibri.webp" class="client-logo" alt="Logo de Colibrí Flores, cliente de Solutic3e">
         </div>
       </div>
 
       <!-- Cliente 5 -->
       <div class="col-6 col-lg col-md-3">
         <div class="client-card p-3 shadow-sm bg-white rounded-4">
-          <img src="img/coordiser.webp" class="client-logo" alt="Cliente 5">
+          <img src="img/coordiser.webp" class="client-logo" alt="Logo de Coordinadora de Servicios, cliente de Solutic3e">
         </div>
       </div>
 
       <!-- Cliente 6 -->
       <div class="col-6 col-lg col-md-3">
         <div class="client-card p-3 shadow-sm bg-white rounded-4">
-          <img src="img/previsan.png" class="client-logo" alt="Cliente 6">
+          <img src="img/previsan.png" class="client-logo" alt="Logo de Previsan, cliente de Solutic3e">
         </div>
       </div>
 

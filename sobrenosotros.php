@@ -8,7 +8,7 @@ require __DIR__ . '/partials/header.php';
 
 <section id="sobre-nosotros" class="py-5 text-white bg-azul-oscuro">
   <div class="container">
-    <h2 class="text-center mb-4" data-aos="fade-up">Sobre Nosotros</h2>
+    <h1 class="h2 text-center mb-4" data-aos="fade-up">Sobre Nosotros</h1>
 
     <!-- Nuestra Empresa -->
     <div class="row mb-5 align-items-center">

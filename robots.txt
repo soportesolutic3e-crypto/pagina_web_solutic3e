@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /partials/
+Disallow: /enviar_formulario.php
+
+Sitemap: https://solutic3e.com/sitemap.xml
