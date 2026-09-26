@@ -12,7 +12,13 @@ require __DIR__ . '/partials/header.php';
     <div class="container text-center" data-aos="fade-up">
     <h1 class="display-4 fw-bold">Comprometidos con la innovación</h1>
     <p class="lead">Soluciones en automatización, Web Services y más</p>
-    <a href="productos.php" class="btn btn-outline-light btn-lg mt-3">Conoce más</a>
+    <div class="d-flex flex-wrap justify-content-center gap-3 mt-3">
+    <a href="#contacto" class="btn btn-light btn-lg px-4 fw-semibold">Cotiza tu proyecto</a>
+    <a href="https://wa.me/573127746648?text=Hola%2C%20vengo%20del%20sitio%20web%20y%20quiero%20informaci%C3%B3n%20sobre%20sus%20servicios"
+        class="btn btn-outline-light btn-lg px-4" target="_blank" rel="noopener">
+      <i class="bi bi-whatsapp me-2"></i>Escríbenos por WhatsApp
+    </a>
+  </div>
   </div>
 </header>
 
