@@ -9,7 +9,7 @@ require __DIR__ . '/partials/header.php';
   <div class="container">
 
     <!-- TÍTULO -->
-    <h2 class="text-center mb-4" data-aos="fade-up">Nuestros Servicios</h2>
+    <h1 class="h2 text-center mb-4" data-aos="fade-up">Nuestros Servicios</h1>
     <p class="text-center text-white mb-5" data-aos="fade-up" data-aos-delay="100">
       Te ofrecemos soluciones tecnológicas completas que integran análisis, desarrollo, datos y un soporte excepcional.
     </p>
