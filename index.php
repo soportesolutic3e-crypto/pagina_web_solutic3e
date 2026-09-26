@@ -1,57 +1,20 @@
-<!------------------------------------------------------------------------------------------------------->
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Solutic3e | Transformando Ideas</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-<!------------------------------------------------------------------------------------------------------->
-
-                    <!-- BARRA DE NAVEGACIÓN -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-    <div class="container">
-      <a class="navbar-brand" href="index.html"> <!-- Inicio Logo -->
-        <img src="img/Logo_actual.webp" alt="logo" height="45">
-      </a> 
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="menu"> <!--secciones navegacion -->
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="sobrenosotros.html">Sobre Nosotros</a></li>
-          <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
-          <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-<!------------------------------------------------------------------------------------------------------->
-                    <!-- SECCIÓN HERO -->
+<?php
+$titulo      = 'Solutic3e | Transformando Ideas';
+$descripcion = 'Automatización de procesos, desarrollo de software, Web Services y soporte técnico para empresas en Zipaquirá y Cundinamarca.';
+$activa      = 'index';
+$scripts     = '<script src="https://www.google.com/recaptcha/api.js" async defer></script>';
+require __DIR__ . '/partials/header.php';
+?>
+<!-- SECCIÓN HERO -->
   
   <header class="hero text-white d-flex align-items-center">
     <div class="overlay"></div>
     <div class="container text-center" data-aos="fade-up">
     <h1 class="display-4 fw-bold">Comprometidos con la innovación</h1>
     <p class="lead">Soluciones en automatización, Web Services y más</p>
-    <a href="productos.html" class="btn btn-outline-light btn-lg mt-3">Conoce más</a>
+    <a href="productos.php" class="btn btn-outline-light btn-lg mt-3">Conoce más</a>
   </div>
 </header>
-
-
-<!------------------------------------------------------------------------------------------------------->
-
-                    <!-- SCRIPTS BOOTSTRAP CONEXION -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 <!------------------------------------------------------------------------------------------------------->
 
@@ -287,7 +250,7 @@
           <div class="form-check d-flex justify-content-center">
             <input class="form-check-input me-2" type="checkbox" id="politica" name="politica" value="1" required>
             <label class="form-check-label" for="politica">
-              He leído y acepto la <a href="politica_de_datos.html" target="_blank" rel="noopener">Política de Tratamiento de Datos</a>.
+              He leído y acepto la <a href="politica_de_datos.php" target="_blank" rel="noopener">Política de Tratamiento de Datos</a>.
             </label>
           </div>
         </div>
@@ -307,99 +270,4 @@
   </div>
 </section>
 
-<!-- Scripts -->
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
-
-<!------------------------------------------------------------------------------------------------------->
-         <!-- Banner de Cookies -->
-<div id="cookieBanner" style="position: fixed; bottom: 0; left: 0; width: 100%; background-color: #040759; color: white; padding: 15px 20px; display: none; z-index: 9999; text-align: center;">
-  <strong style="color: #E53935;"> <a href="cookies.html">Política de cookie</a></strong> 
-  — Utilizamos cookies para mejorar tu experiencia. Al aceptar, estas permitiendo el uso de las mismas.
-  <br><br>
-  <button id="aceptarCookies" style="background-color: #E53935; color: white; padding: 8px 16px; border: none; border-radius: 5px; margin: 5px;">Aceptar</button>
-  <button id="rechazarCookies" style="background-color: white; color: #040759; padding: 8px 16px; border: 1px solid #040759; border-radius: 5px; margin: 5px;">Rechazar</button>
-</div>
-
-<!------------------------------------------------------------------------------------------------------->
-                <!--FOOTER-->
-<footer class="bg-white text-center text-muted py-4 mt-5 border-top">
-  <div class="container " data-aos="slide-up" data-aos-delay="100">
-    <div class="mb-3">
-      <img src="img/Logo_actual.webp" alt="Logo Solutic3e" loading="lazy" height="40">
-    </div>
-    <p class="mb-1">Solutic3e - Automatización de procesos y servicios tecnológicos</p>
-    <p class="mb-1">📍 Zipaquirá, Cundinamarca</p>
-    <p class="mb-1">📞 WhatsApp: <a href="https://wa.me/573127746648" class="text-decoration-none text-muted">+57 312 774 6648</a></p>
-    <p class="mb-1">✉️ Email: <a href="mailto:info@solutic3e.com" class="text-decoration-none text-muted">info@solutic3e.com</a></p>
-
-    <div class="d-flex justify-content-center gap-3 my-3">
-      <a href="https://www.facebook.com/share/1CNtFzT6Nw/" class="text-muted fs-5"><i class="bi bi-facebook"></i></a>
-      <a href="https://www.instagram.com/solutic3e?igsh=Z3NycTJkYno3N3B1" class="text-muted fs-5"><i class="bi bi-instagram"></i></a>
-    </div>
-
-    <small class="d-block">&copy; 2025 Solutic3e. Todos los derechos reservados.</small>
-  </div>
-</footer>
-
-
-<!------------------------------------------------------------------------------------------------------->
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-<a href="https://wa.me/573127746648" 
-   class="btn-whatsapp" 
-   target="_blank" 
-   aria-label="Chatea con nosotros por WhatsApp">
-  <i class="bi bi-whatsapp"></i>
-</a>
-
-<!------------------------------------------------------------------------------------------------------->
-<!--------------cookies---------------------------------------------------------------------------------->
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const banner = document.getElementById("cookieBanner");
-    const decision = localStorage.getItem("cookiesAceptadas");
-
-    if (decision === null) {
-      banner.style.display = "block";
-    }
-
-    document.getElementById("aceptarCookies").addEventListener("click", function () {
-      localStorage.setItem("cookiesAceptadas", "true");
-      banner.style.display = "none";
-      cargarCookiesPermitidas();
-    });
-
-    document.getElementById("rechazarCookies").addEventListener("click", function () {
-      localStorage.setItem("cookiesAceptadas", "false");
-      banner.style.display = "none";
-    });
-
-    if (decision === "true") {
-      cargarCookiesPermitidas();
-    }
-
-    function cargarCookiesPermitidas() {
-      const GA_ID = "G-S1862EKK2G";
-      if (window.gaCargado) return;   // evita cargarlo dos veces
-      window.gaCargado = true;
-
-      window.dataLayer = window.dataLayer || [];
-      window.gtag = function () { dataLayer.push(arguments); };
-      gtag("js", new Date());
-      gtag("config", GA_ID);
-
-      const gaScript = document.createElement("script");
-      gaScript.async = true;
-      gaScript.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
-      document.head.appendChild(gaScript);
-    }
-  });
-</script>
-
-
-<!------------------------------------------------------------------------------------------------------->
-</body>
-</html>
+<?php require __DIR__ . '/partials/footer.php'; ?>

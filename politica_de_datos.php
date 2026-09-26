@@ -1,15 +1,8 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Política de Tratamiento de Datos | Solutic3E</title>
-  <meta name="description" content="Política de tratamiento de datos personales de SOLUTIC 3E S.A.S. conforme a la Ley 1581 de 2012 y el Decreto 1377 de 2013.">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-  <style>
+<?php
+$titulo      = 'Política de Tratamiento de Datos | Solutic3E';
+$descripcion = 'Política de tratamiento de datos personales de SOLUTIC 3E S.A.S. conforme a la Ley 1581 de 2012 y el Decreto 1377 de 2013.';
+$activa      = '';
+$estilos     = <<<'CSS'
     /* Estilos solo para el contenido de la política, no afectan nav ni footer */
     .pagina-legal .fade-in {
       animation: fadeInUp 1s ease-in-out;
@@ -32,35 +25,9 @@
       list-style-type: disc;
       padding-left: 2rem;
     }
-  </style>
-</head>
-<body>
-<!------------------------------------------------------------------------------------------------------->
-
-                    <!-- BARRA DE NAVEGACIÓN -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-    <div class="container">
-      <a class="navbar-brand" href="index.html"> <!-- Inicio Logo -->
-        <img src="img/Logo_actual.webp" alt="logo" height="45">
-      </a> 
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
-              aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="menu"> <!--secciones navegacion -->
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="sobrenosotros.html">Sobre Nosotros</a></li>
-          <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
-          <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-<!-------------------------------------------------------------------------------------------------------> 
+CSS;
+require __DIR__ . '/partials/header.php';
+?>
 <main class="py-5 bg-light pagina-legal">
   <div class="container">
     <div class="text-center mb-5">
@@ -115,7 +82,7 @@
 
       <h6 class="fw-bold mt-3">2.4. Visitantes del sitio web</h6>
       <ul>
-        <li>Analizar de forma estadística el uso del sitio web mediante cookies, según lo descrito en la <a href="cookies.html">Política de Cookies</a>.</li>
+        <li>Analizar de forma estadística el uso del sitio web mediante cookies, según lo descrito en la <a href="cookies.php">Política de Cookies</a>.</li>
       </ul>
 
       <h5 class="fw-bold mt-4">3. Tratamiento al cual serán sometidos los datos</h5>
@@ -181,47 +148,10 @@
       </ul>
 
       <div class="text-center mt-5">
-        <a href="index.html" class="btn btn-primary">Volver al sitio web</a>
+        <a href="/" class="btn btn-primary">Volver al sitio web</a>
       </div>
     </div>
   </div>
 </main>
 
-<!------------------------------------------------------------------------------------------------------->
-                <!--FOOTER-->
-<footer class="bg-white text-center text-muted py-4 mt-5 border-top">
-  <div class="container " data-aos="slide-up" data-aos-delay="100">
-    <div class="mb-3">
-      <img src="img/Logo_actual.webp" alt="Logo Solutic3e" loading="lazy" height="40">
-    </div>
-    <p class="mb-1">Solutic3e - Automatización de procesos y servicios tecnológicos</p>
-    <p class="mb-1">📍 Zipaquirá, Cundinamarca</p>
-    <p class="mb-1">📞 WhatsApp: <a href="https://wa.me/573127746648" class="text-decoration-none text-muted">+57 312 774 6648</a></p>
-    <p class="mb-1">✉️ Email: <a href="mailto:info@solutic3e.com" class="text-decoration-none text-muted">info@solutic3e.com</a></p>
-
-    <div class="d-flex justify-content-center gap-3 my-3">
-      <a href="https://www.facebook.com/share/1CNtFzT6Nw/" class="text-muted fs-5"><i class="bi bi-facebook"></i></a>
-      <a href="https://www.instagram.com/solutic3e?igsh=Z3NycTJkYno3N3B1" class="text-muted fs-5"><i class="bi bi-instagram"></i></a>
-    </div>
-
-    <small class="d-block">&copy; 2025 Solutic3e. Todos los derechos reservados.</small>
-  </div>
-</footer>
-
-<!------------------------------------------------------------------------------------------------------->
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-<a href="https://wa.me/573127746648" 
-   class="btn-whatsapp" 
-   target="_blank" 
-   aria-label="Chatea con nosotros por WhatsApp">
-  <i class="bi bi-whatsapp"></i>
-</a>
-
-<!------------------------------------------------------------------------------------------------------->
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+<?php require __DIR__ . '/partials/footer.php'; ?>
