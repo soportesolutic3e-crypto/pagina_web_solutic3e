@@ -24,3 +24,18 @@ RewriteRule ^(sobrenosotros|productos|servicios|cookies|politica_de_datos|agrade
 <FilesMatch "\.(log|bk|bak|sql|ini|env)$">
   Require all denied
 </FilesMatch>
+
+# Caché del navegador para archivos estáticos
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType text/javascript "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType application/pdf "access plus 1 month"
+  ExpiresDefault "access plus 1 week"
+</IfModule>
