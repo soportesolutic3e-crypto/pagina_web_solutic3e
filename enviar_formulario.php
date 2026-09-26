@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 
 // 2. Honeypot: los bots llenan este campo oculto, los humanos no
 if (!empty($_POST['website'] ?? '')) {
-    header('Location: agradecimiento.html', true, 303);
+    header('Location: agradecimiento.php', true, 303);
     exit;
 }
 
@@ -130,5 +130,5 @@ if (!$enviado) {
 }
 
 // 8. PRG: 303 evita reenvío al refrescar
-header('Location: agradecimiento.html', true, 303);
+header('Location: agradecimiento.php', true, 303);
 exit;

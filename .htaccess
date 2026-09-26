@@ -1,0 +1,41 @@
+# ------------------------------------------------------------------
+# Solutic3e - configuración del servidor (Apache / LiteSpeed)
+# ------------------------------------------------------------------
+
+# Página de inicio
+DirectoryIndex index.php index.html
+
+# No listar el contenido de carpetas sin index
+Options -Indexes
+
+RewriteEngine On
+
+# Bloquear acceso directo a los fragmentos PHP
+RewriteRule ^partials/ - [F,L]
+
+# /index.php y /index.html -> /  (una sola URL para la página de inicio)
+RewriteCond %{THE_REQUEST} \s/index\.(php|html)[\s?]
+RewriteRule ^index\.(php|html)$ / [R=301,L]
+
+# Páginas antiguas .html -> .php (301 conserva el posicionamiento en Google)
+RewriteRule ^(sobrenosotros|productos|servicios|cookies|politica_de_datos|agradecimiento)\.html$ /$1.php [R=301,L]
+
+# Bloquear archivos sensibles por si alguno llega a public_html
+<FilesMatch "\.(log|bk|bak|sql|ini|env)$">
+  Require all denied
+</FilesMatch>
+
+# Caché del navegador para archivos estáticos
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType text/javascript "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType application/pdf "access plus 1 month"
+  ExpiresDefault "access plus 1 week"
+</IfModule>

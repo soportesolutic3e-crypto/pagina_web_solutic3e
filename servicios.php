@@ -1,40 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios | Solutic3E</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <!------------------------------------------------------------------------------------------------------->
-
-                    <!-- BARRA DE NAVEGACIÓN -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-    <div class="container">
-      <a class="navbar-brand" href="index.html"> <!-- Inicio Logo -->
-        <img src="img/Logo_actual.webp" alt="logo" height="45">
-      </a> 
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="menu"> <!--secciones navegacion -->
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="sobrenosotros.html">Sobre Nosotros</a></li>
-          <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
-          <li class="nav-item"><a class="nav-link active" href="servicios.html">Servicios</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-<!------------------------------------------------------------------------------------------------------->
+<?php
+$titulo      = 'Servicios | Solutic3E';
+$descripcion = 'Análisis, desarrollo de soluciones, gestión de datos, integración de sistemas y soporte técnico directo.';
+$activa      = 'servicios';
+require __DIR__ . '/partials/header.php';
+?>
 <!-- SECCIÓN SERVICIOS -->
 <section id="servicios" class="py-5 text-white" style="background-color: #040759;">
   <div class="container">
@@ -127,42 +96,4 @@
   </div>
 </section>
 
-<!------------------------------------------------------------------------------------------------------->
-
-<!------------------------------------------------------------------------------------------------------->
-                <!--FOOTER-->
-<footer class="bg-white text-center text-muted py-4 mt-5 border-top">
-  <div class="container " data-aos="slide-up" data-aos-delay="100">
-    <div class="mb-3">
-      <img src="img/Logo_actual.webp" loading="lazy" alt="Logo Solutic3e" height="40">
-    </div>
-    <p class="mb-1">Solutic3e - Automatización de procesos y servicios tecnológicos</p>
-    <p class="mb-1">📍 Zipaquirá, Cundinamarca</p>
-    <p class="mb-1">📞 WhatsApp: <a href="https://wa.me/573127746648" class="text-decoration-none text-muted">+57 312 774 6648</a></p>
-    <p class="mb-1">✉️ Email: <a href="mailto:info@solutic3e.com" class="text-decoration-none text-muted">info@solutic3e.com</a></p>
-
-    <div class="d-flex justify-content-center gap-3 my-3">
-      <a href="https://www.facebook.com/share/1CNtFzT6Nw/" class="text-muted fs-5"><i class="bi bi-facebook"></i></a>
-      <a href="https://www.instagram.com/solutic3e?igsh=Z3NycTJkYno3N3B1" class="text-muted fs-5"><i class="bi bi-instagram"></i></a>
-    </div>
-
-    <small class="d-block">&copy; 2025 Solutic3e. Todos los derechos reservados.</small>
-  </div>
-</footer>
-<!----------------------------------------------------------------------------------------------------->
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-<script>
-  AOS.init();
-</script>
-<a href="https://wa.me/573127746648" 
-   class="btn-whatsapp" 
-   target="_blank" 
-   aria-label="Chatea con nosotros por WhatsApp">
-  <i class="bi bi-whatsapp"></i>
-</a>
-
-</body>
-</html>
-<!----------------------------------------------------------------------------------------------------->
+<?php require __DIR__ . '/partials/footer.php'; ?>
